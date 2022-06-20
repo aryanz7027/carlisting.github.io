@@ -96,3 +96,51 @@ ul span {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.filter {
+    border-radius: 3px;
+    padding: 7px 20px;
+    background-color: #b1adad1a;
+    color: #888484;
+    font-weight: 400;
+}
+
+div.modal.custom-modal{
+
+  z-index: 1;
+  width:400px;
+  height:400px;
+  top:19%;
+  left:65%;
+  padding:0;
+  margin:0;
+}
+div.modal.custom-modal .modal-footer{
+  padding:15px 26px;
+  margin:0;
+  border: none;
+}
+div.modal.custom-modal .modal-body{
+  padding:20px 26px;
+  margin:0;
+}
+div.modal.custom-modal .modal-header{
+  padding:11px 20px;
+  margin:0;
+}
+.modal-backdrop{
+  display:none;
+}
+
+.btn.disabled{
+  cursor:not-allowed;
+}
+.text-md-light{
+  color: #9ea9b5;
+}
+.font-wt-bold-lt{
+  font-weight: 500;
+}
+.empty-state{
+  margin: auto;
+}

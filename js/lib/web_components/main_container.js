@@ -166,6 +166,7 @@ class MainContainer extends HTMLElement {
         complete: () => {
           $(this).find('.spinner').remove()
           $(this).find('#apply-filter').removeClass('disabled').attr('disabled', false)
+          $(this).find('#search').removeClass('disabled').attr('disabled', false)
         }
       });
     }
@@ -266,6 +267,7 @@ class MainContainer extends HTMLElement {
       this.filter_params['card_name'] = text
     }else delete this.filter_params['card_name']
     if(e.type == 'keyup') return
+    $(e.currentTarget).addClass('disabled').attr('disabled', true)
     this.filter_params.page = 1
     $(this).find('#card-list').empty()
     this._fetchCards()

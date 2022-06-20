@@ -110,10 +110,24 @@ div.modal.custom-modal{
   z-index: 1;
   width:400px;
   height:400px;
-  top:19%;
+  top:23%;
   left:65%;
   padding:0;
   margin:0;
+}
+@media (max-width: 1140px){
+  div.modal.custom-modal{
+    top:23%;
+    left:50%;
+    width:350px;
+  }
+}
+@media (max-width: 763px){
+  div.modal.custom-modal{
+    top:26%;
+    left:40%;
+    width:220px;
+  }
 }
 div.modal.custom-modal .modal-footer{
   padding:15px 26px;
